@@ -7,7 +7,7 @@ module Api::V1
 
     def create
       @idea = Idea.create(idea_params)
-      render jsaon: @idea
+      render json: @idea
     end
 
     def update
